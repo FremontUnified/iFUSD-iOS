@@ -136,6 +136,7 @@
 		04D6246E14EF624C00DFAF5C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6246D14EF624C00DFAF5C /* CFNetwork.framework */; };
 		04D6247014EF625900DFAF5C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6246F14EF625900DFAF5C /* MobileCoreServices.framework */; };
 		04D6247214EF626600DFAF5C /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6247114EF626600DFAF5C /* libz.1.1.3.dylib */; };
+		04D9C37B162E8AB600383A49 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D9C37A162E8AB600383A49 /* Default-568h@2x.png */; };
 		04DC2A3713B93553003ACB2A /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC2A3513B93553003ACB2A /* loading.png */; };
 		04DC2A3E13B93601003ACB2A /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC2A3D13B93601003ACB2A /* loading@2x.png */; };
 		04DC2A5A13B96480003ACB2A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04DC2A5913B96480003ACB2A /* LICENSE */; };
@@ -334,6 +335,7 @@
 		04D6246F14EF625900DFAF5C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		04D6247114EF626600DFAF5C /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		04D6247314EF66D700DFAF5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04D9C37A162E8AB600383A49 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		04DC2A3513B93553003ACB2A /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		04DC2A3D13B93601003ACB2A /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
 		04DC2A5913B96480003ACB2A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -464,6 +466,7 @@
 		048CDFCC13B6B2A2005E7B0B = {
 			isa = PBXGroup;
 			children = (
+				04D9C37A162E8AB600383A49 /* Default-568h@2x.png */,
 				04D6247314EF66D700DFAF5C /* CoreLocation.framework */,
 				04EEB9F414D6110700559671 /* iPad */,
 				048CDFE113B6B2A3005E7B0B /* Fremont Unified */,
@@ -1035,6 +1038,7 @@
 				0478610D151181DA009C057E /* Default-Landscape@2x~ipad.png in Resources */,
 				04786110151181EF009C057E /* Default-Landscape-Left~ipad@2x.png in Resources */,
 				04786111151181EF009C057E /* Default-PortraitUpsideDown~ipad@2x.png in Resources */,
+				04D9C37B162E8AB600383A49 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1184,7 +1188,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.0;
 			};
 			name = AdHoc;
 		};
@@ -1233,7 +1237,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.0;
 			};
 			name = AdHocSumukh;
 		};
@@ -1311,7 +1315,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.0;
 			};
 			name = Debug;
 		};
@@ -1333,7 +1337,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.0;
 			};
 			name = Release;
 		};
