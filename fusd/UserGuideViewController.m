@@ -92,7 +92,7 @@
 {
     [self setTitle: @"User Guide"];
 
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /userguide/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/userguide/"]]];
     [super viewDidLoad];
     [webView setOpaque:NO];
     // webView.backgroundColor=[UIColor scrollViewTexturedBackgroundColor  ];

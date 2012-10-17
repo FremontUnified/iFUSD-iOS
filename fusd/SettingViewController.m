@@ -104,7 +104,7 @@
     if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation))
     {
         
-        Reachability *r = [Reachability reachabilityWithHostName:@"http://"];
+        Reachability *r = [Reachability reachabilityWithHostName:@"ifusd.fremontunified.org"];
         /** Reachability checks for internet and if it fails, we send up a view controller  */
         
         NetworkStatus internetStatus = [r currentReachabilityStatus];
@@ -151,7 +151,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
+/*
 -(void)mostrecentelse {
     
     UIRemoteNotificationType types = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
@@ -170,6 +170,7 @@
     }
 }
 
+
 -(void)updatealert {
     if( [UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeLeft ){
     }
@@ -177,8 +178,8 @@
     } 
     else {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-//url string secret
-        NSString *urlString = @"";
+        //get the most recent push
+        NSString *urlString = @"www.example.com";
         NSString *agentString = @"iFUSD/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) iFUSD/525.27.1 (KHTML, like Gecko) Version/1.2 iOS Client";
         
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: 
@@ -222,7 +223,7 @@
     }
         
 }
-
+*/
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {

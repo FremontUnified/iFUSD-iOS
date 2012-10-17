@@ -45,7 +45,7 @@
     NSString *uid = [UIDevice currentDevice].uniqueIdentifier;
 
 
-    [FlurryAnalytics logEvent:@"Did Look At Device Area"];
+   // [FlurryAnalytics logEvent:@"Did Look At Device Area"];
     //table of contents
     arryHewlettPackard = [[NSArray alloc] initWithObjects:@"Attendance Areas",@"School District",@"High Schools",@"Junior High Schools",@"Elementary Schools",@"Other Settings",nil];
 
@@ -107,8 +107,8 @@
     arryCisco = [[NSArray alloc] initWithObjects:@"American Attendance Area",@"Irvington Attendance Area",@"Kennedy Attendance Area",@"Mission San Jose Area",@"Washington Attendance Area",nil];
   
     arryGoogle = [[NSArray alloc] initWithObjects:@"Subscribe to All Schools",@"No Push Notifications",nil];
-//push server goes here
-    NSString *url = @"";
+
+    NSString *url = @"http://example.com/?uid=";
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[(NSMutableString*)url stringByAppendingString:uid]]]];
   
     webView.backgroundColor = [UIColor groupTableViewBackgroundColor];
@@ -469,7 +469,8 @@
         // Build URL String for Registration
         // !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
         // !!! SAMPLE: "secure.awesomeapp.com"
-        NSString *host = @"http://fusdpush";
+//Change this
+        NSString *host = @"www.mywebsite.com";
         
         // !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
         // !!! ( MUST START WITH / AND END WITH ? ). 
@@ -530,7 +531,7 @@
         // Build URL String for Registration
         // !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
         // !!! SAMPLE: "secure.awesomeapp.com"
-        NSString *host = @"http://fusdpush";
+        NSString *host = @"www.mywebsite.com";
         
         // !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
         // !!! ( MUST START WITH / AND END WITH ? ). 
@@ -583,7 +584,7 @@
         // Build URL String for Registration
         // !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
         // !!! SAMPLE: "secure.awesomeapp.com"
-        NSString *host = @"http://fusdpush";
+        NSString *host = @"www.mywebsite.com";
         
         // !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
         // !!! ( MUST START WITH / AND END WITH ? ). 
@@ -636,7 +637,7 @@
         // Build URL String for Registration
         // !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
         // !!! SAMPLE: "secure.awesomeapp.com"
-        NSString *host = @"http://fusdpush";
+        NSString *host = @"www.mywebsite.com";
         
         // !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
         // !!! ( MUST START WITH / AND END WITH ? ). 
@@ -696,7 +697,7 @@
         // Build URL String for Registration
         // !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
         // !!! SAMPLE: "secure.awesomeapp.com"
-        NSString *host = @"http://fusdpush";
+        NSString *host = @"www.mywebsite.com";
         
         // !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
         // !!! ( MUST START WITH / AND END WITH ? ). 
@@ -753,7 +754,7 @@
         // Build URL String for Registration
         // !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
         // !!! SAMPLE: "secure.awesomeapp.com"
-        NSString *host = @"http://fusdpush";
+        NSString *host = @"www.mywebsite.com";
         
         // !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
         // !!! ( MUST START WITH / AND END WITH ? ). 
@@ -885,7 +886,7 @@
         // Build URL String for Registration
         // !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
         // !!! SAMPLE: "secure.awesomeapp.com"
-        NSString *host = @"http://fusdpush";
+        NSString *host = @"www.mywebsite.com";
         
         // !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
         // !!! ( MUST START WITH / AND END WITH ? ). 

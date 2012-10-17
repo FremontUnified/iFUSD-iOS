@@ -39,7 +39,7 @@
 
 - (void)viewDidLoad
 {
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /news/site.php?site=news"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/news/site.php?site=news"]]];
     webView.delegate = self;
     [webView setOpaque:NO];
     //webView.backgroundColor=[UIColor groupTableViewBackgroundColor ];
@@ -157,7 +157,7 @@
 
 -(IBAction)home{
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /news/site.php?site=news"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/news/site.php?site=news"]]];
     
 }
 

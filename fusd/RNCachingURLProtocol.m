@@ -32,7 +32,7 @@ static NSString *RNCachingURLHeader = @"X-RNCache";
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request
 {
- if ([[request.URL description] hasPrefix:@" "] &&
+ if ([[request.URL description] hasPrefix:@"http://ifusd.fremontunified.org"] &&
       [request valueForHTTPHeaderField:RNCachingURLHeader] == nil)
   {
     return YES;

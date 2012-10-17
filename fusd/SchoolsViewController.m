@@ -40,7 +40,7 @@
 - (void)viewDidLoad
 {
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /schools/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/schools/"]]];
    // webView.delegate = self;
     [webView setOpaque:NO];
     //  webView.backgroundColor=[UIColor scrollViewTexturedBackgroundColor  ];
@@ -155,7 +155,7 @@
 
 -(IBAction)home{
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /schools/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/schools/"]]];
     
 }
 

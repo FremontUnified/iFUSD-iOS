@@ -39,7 +39,7 @@
 - (void)viewDidLoad
 {
 
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /cal/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/cal/"]]];
     webView.delegate = self;
     [webView setOpaque:NO];
   //  webView.backgroundColor=[UIColor scrollViewTexturedBackgroundColor  ];
@@ -154,7 +154,7 @@
 
 -(IBAction)home{
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /cal/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/cal/"]]];
     
 }
 

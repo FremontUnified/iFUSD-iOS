@@ -95,8 +95,8 @@
     // loading from district:
 
   //Loading from Sumukh's site 
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http:// /about/"]]];  
-   // [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http:// / /about/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/about/"]]];  
+   // [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://sumukhsridhara.com/fusdweb/about/"]]];
     [super viewDidLoad];
     [webView setOpaque:NO];
     webView.backgroundColor=[UIColor colorWithRed:220.0f/255.0f green:222.0f/255.0f blue:225.0f/255.0f alpha:0.8f];

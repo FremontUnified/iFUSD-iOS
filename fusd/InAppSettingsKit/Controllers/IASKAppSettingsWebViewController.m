@@ -74,7 +74,7 @@
     
     
 	NSURL *newURL = [request URL];
-    NSURL *twiiter = [NSURL URLWithString:@" twitter.php"];
+    NSURL *twiiter = [NSURL URLWithString:@"http://ifusd.fremontunified.org/twitter.php"];
     
     if([twiiter isEqual:newURL]) {
         NSLog(@"Same"); // Not run

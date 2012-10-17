@@ -96,7 +96,7 @@
 
     // will work
 
-    Reachability *r = [Reachability reachabilityWithHostName:@"http://"];
+    Reachability *r = [Reachability reachabilityWithHostName:@"ifusd.fremontunified.org"];
     /** Reachability checks for internet and if it fails, we send up a view controller  */
 
 	NetworkStatus internetStatus = [r currentReachabilityStatus];
@@ -118,7 +118,7 @@
 	// Clear application badge when app launches
 	application.applicationIconBadgeNumber = 0;
         //flurryAPI gives us stats that Google Analytics doesnt, keeping it in for a while
-        [FlurryAnalytics startSession:@"AHDS2A8ATUUYKB3BTPGJ"];
+       // [FlurryAnalytics startSession:@"KEY"];
 
     
 
@@ -146,9 +146,10 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
 	
+    
 #if !TARGET_IPHONE_SIMULATOR
     
-    
+    /*
 	// Get Bundle Info for Remote Registration (handy if you have more than one app)
 	NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
 	NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
@@ -220,16 +221,16 @@
 	// Build URL String for Registration
 	// !!! CHANGE "www.mywebsite.com" TO YOUR WEBSITE. Leave out the http://
 	// !!! SAMPLE: "secure.awesomeapp.com"
-	NSString *host = @"http://fusdpush";
+	// NSString *host = @"www.mywebsite.com";
     /** Push Server URL here  */
 
 	// !!! CHANGE "/apns.php?" TO THE PATH TO WHERE apns.php IS INSTALLED 
 	// !!! ( MUST START WITH / AND END WITH ? ). 
 	// !!! SAMPLE: "/path/to/apns.php?"
     //devicename is really zone
-	NSString *urlString = [NSString stringWithFormat:@"/apns.php?task=%@&appname=%@&appversion=%@&deviceuid=%@&devicetoken=%@&devicename=%@&devicemodel=%@&deviceversion=%@&pushbadge=%@&pushalert=%@&pushsound=%@", @"register", appName,appVersion, deviceUuid, deviceToken, deviceName, deviceModel, deviceSystemVersion, pushBadge, pushAlert, pushSound];
+	// NSString *urlString = [NSString stringWithFormat:@"/apns.php?task=%@&appname=%@&appversion=%@&deviceuid=%@&devicetoken=%@&devicename=%@&devicemodel=%@&deviceversion=%@&pushbadge=%@&pushalert=%@&pushsound=%@", @"register", appName,appVersion, deviceUuid, deviceToken, deviceName, deviceModel, deviceSystemVersion, pushBadge, pushAlert, pushSound];
 	
-
+/*
     
 	// !!! CHANGE "http" TO "https" IF YOU ARE USING HTTPS PROTOCOL
 	NSURL *url = [[NSURL alloc] initWithScheme:@"http" host:host path:urlString ];
@@ -238,12 +239,16 @@
 	NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSLog(@"Register URL: %@", url);
     NSLog(@"Return Data: %@", returnData);
+ */
+    
 #endif
+    
 }
 
 /**
  * Failed to Register for Remote Notifications
  */
+/*
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
 #if !TARGET_IPHONE_SIMULATOR
 
@@ -257,9 +262,12 @@
 #endif
     
 }
+ */
 /**
  * Remote Notification Received while application was open.
  */
+
+/*
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 	
 #if !TARGET_IPHONE_SIMULATOR
@@ -280,6 +288,7 @@
 	
 #endif
 }
+*/
 
 /* 
  * --------------------------------------------------------------------------------------------------------------

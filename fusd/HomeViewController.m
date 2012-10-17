@@ -42,11 +42,15 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
+/*
+ 
+ Replace the  server url with your own version.
+ */
 -(IBAction)pushnews; {
     DistrictViewController *dis = [[DistrictViewController alloc]init];
     dis.title =@"News";
     
-    dis.urlObject = [NSURL URLWithString:@"  /news/site.php"];
+    dis.urlObject = [NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/news/site.php"];
     [self.navigationController pushViewController:dis animated:YES];
     [dis release];
 
@@ -65,7 +69,7 @@
     DistrictViewController *dis = [[DistrictViewController alloc]init];
     dis.title =@"Calendar";
     
-    dis.urlObject = [NSURL URLWithString:@"  /cal/"];
+    dis.urlObject = [NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/cal/"];
     [self.navigationController pushViewController:dis animated:YES];
     [dis release];
 
@@ -88,7 +92,7 @@
     DistrictViewController *dis = [[DistrictViewController alloc]init];
     dis.title =@"Community";
     
-    dis.urlObject = [NSURL URLWithString:@"  /community/"];
+    dis.urlObject = [NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/community/"];
     [self.navigationController pushViewController:dis animated:YES];
     [dis release];
 }
@@ -97,7 +101,7 @@
     DistrictViewController *dis = [[DistrictViewController alloc]init];
     dis.title =@"Board of Education";
     
-    dis.urlObject = [NSURL URLWithString:@"  /boardofed/"];
+    dis.urlObject = [NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/boardofed/"];
     [self.navigationController pushViewController:dis animated:YES];
     [dis release];
 
@@ -110,7 +114,7 @@
     DistrictViewController *dis = [[DistrictViewController alloc]init];
     dis.title =@"District";
 
-    dis.urlObject = [NSURL URLWithString:@"  /district/"];
+    dis.urlObject = [NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/district/"];
     [self.navigationController pushViewController:dis animated:YES];
     [dis release];
 }
@@ -120,7 +124,7 @@
     DistrictViewController *dis = [[DistrictViewController alloc]init];
     dis.title =@"Schools";
     
-    dis.urlObject = [NSURL URLWithString:@"  /schools/"];
+    dis.urlObject = [NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/schools/"];
     [self.navigationController pushViewController:dis animated:YES];
     [dis release];
 
@@ -140,7 +144,7 @@
     DistrictViewController *dis = [[DistrictViewController alloc]init];
     dis.title =@"Budget";
     
-    dis.urlObject = [NSURL URLWithString:@"  /budget/"];
+    dis.urlObject = [NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/budget/"];
     [self.navigationController pushViewController:dis animated:YES];
     [dis release];
 }
@@ -174,7 +178,7 @@
 //    [self.navigationController setNavigationBarHidden:NO animated:NO];
 
    // self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"loading.png"]];
-   /* NSString *string = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://www. / /alerts.php?view=home"]];
+   /* NSString *string = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://www.sumukhsridhara.com/fusdweb/alerts.php?view=home"]];
 
     //NSLog(@"%@",string);
     if ([string length] == 0){

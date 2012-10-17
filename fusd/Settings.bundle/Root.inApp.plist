@@ -38,7 +38,7 @@
 			<key>IASKMailComposeBccRecipents</key>
 			<array/>
 			<key>IASKMailComposeBody</key>
-			<string>The Fremont Unified School District released an app called iFUSD. &lt;br&gt; It&apos;s a great way to stay informed about current events across the district. There are Push Notifications and many more features! You should check it out! It&amp;apos;s free on the iPhone AppStore!&lt;br&gt;&lt;p align=&quot;center&quot; &gt; &lt;a href=&quot;http://itunes.apple.com/us/app/ifusd/id454673943?ls=1&amp;mt=8&quot;&gt;Link to App Store &lt;/a&gt; &lt;br&gt;  &lt;a href=&quot;http://itunes.apple.com/us/app/ifusd/id454673943?ls=1&amp;mt=8&quot;&gt; &lt;br&gt; &lt;img src=&quot; 114.png&quot; &gt;&lt;br&gt; &lt;img src=&quot;http://example.comappstore.gif&quot; align=&quot;center&quot;&gt;&lt;/a&gt;</string>
+			<string>The Fremont Unified School District released an app called iFUSD. &lt;br&gt; It&apos;s a great way to stay informed about current events across the district. There are Push Notifications and many more features! You should check it out! It&amp;apos;s free on the iPhone AppStore!&lt;br&gt;&lt;p align=&quot;center&quot; &gt; &lt;a href=&quot;http://itunes.apple.com/us/app/ifusd/id454673943?ls=1&amp;mt=8&quot;&gt;Link to App Store &lt;/a&gt; &lt;br&gt;  &lt;a href=&quot;http://itunes.apple.com/us/app/ifusd/id454673943?ls=1&amp;mt=8&quot;&gt; &lt;br&gt; &lt;br&gt; &lt;img src=&quot;http://ifusd.fremontunified.org/appstore.gif&quot; align=&quot;center&quot;&gt;&lt;/a&gt;</string>
 			<key>IASKMailComposeBodyIsHTML</key>
 			<string>YES</string>
 			<key>IASKMailComposeCcRecipents</key>
@@ -56,7 +56,7 @@
 			<key>DefaultValue</key>
 			<string>Tweet</string>
 			<key>File</key>
-			<string> twitter.php</string>
+			<string>http://ifusd.fremontunified.org/twitter.php</string>
 			<key>IASKViewControllerClass</key>
 			<string>IASKAppSettingsWebViewController</string>
 			<key>IASKViewControllerSelector</key>
@@ -70,7 +70,7 @@
 			<key>DefaultValue</key>
 			<string>FUSD</string>
 			<key>File</key>
-			<string> rate.php</string>
+			<string>http://ifusd.fremontunified.org/rate.php</string>
 			<key>Title</key>
 			<string>Rate this App</string>
 			<key>Type</key>

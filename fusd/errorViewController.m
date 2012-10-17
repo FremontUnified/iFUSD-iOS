@@ -79,7 +79,7 @@
     }
     else if (buttonIndex == 1)
     {
-        {  Reachability *r = [Reachability reachabilityWithHostName:@"http://"];
+        {  Reachability *r = [Reachability reachabilityWithHostName:@"ifusd.fremontunified.org"];
         
         NetworkStatus internetStatus = [r currentReachabilityStatus];
         

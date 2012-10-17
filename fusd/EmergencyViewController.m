@@ -48,7 +48,7 @@
     webView.delegate = self;
     [webView setOpaque:NO];
 
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /em/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/em/"]]];
    //  webView.backgroundColor=[UIColor scrollViewTexturedBackgroundColor  ];
     ///groupTableViewBackgroundColor
     //webview needs a background so we are having this as the boilerplate. 
@@ -111,7 +111,7 @@
 
 - (void)animate:(DAReloadActivityButton *)button
 {
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /em/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/em/"]]];
 
 [button spin];
     
@@ -153,7 +153,7 @@
 
 -(IBAction)home{
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"  /em/"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ifusd.fremontunified.org/fusdweb/em/"]]];
     
 }
 
