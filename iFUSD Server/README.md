@@ -15,7 +15,7 @@ The core feature of the code is this segment of PHP Code:
 
 The $url variable is the CMS Page we've chosen
 The preg_match uses regex to find the content of the page.
-
+```
 <?php
 $url = 'http://www.fremont.k12.ca.us/Page/31';
 $ch = curl_init ($url); //URL to Scrape
@@ -30,7 +30,7 @@ foreach ($matches as &$match) {
 // output html, styles, and more.
 echo $matches[1]; 
 ?>
-
+```
 We use a NoClickDelay to help the application feel more responsive. 
 
 ----------------------
